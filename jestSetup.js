@@ -60,7 +60,7 @@ jest.mock('react-native-device-info', () => ({
     return '2019010101'
   },
   getBundleId() {
-    return 'co.edgesecure.app'
+    return 'com.cryptobase.atm.app'
   },
   getDeviceId() {
     return 'iPhone7,2'

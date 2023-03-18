@@ -1,4 +1,4 @@
-package co.edgesecure.app;
+package com.cryptobase.atm.app;
 
 import android.content.Context;
 import android.util.Base64;

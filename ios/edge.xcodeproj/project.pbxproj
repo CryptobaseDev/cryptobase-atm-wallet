@@ -44,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		0F91EE15341B486DB1AD6756 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-UI-Text-Regular.otf"; path = "../src/assets/fonts/SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Cryptobase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptobase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Cryptobase ATM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cryptobase ATM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = edge/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = edge/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = edge/Images.xcassets; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Cryptobase.app */,
+				13B07F961A680F5B00A75B9A /* Cryptobase ATM.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +230,7 @@
 				76D1BE144E24999F9525E452 /* [CP] Embed Pods Frameworks */,
 				5C3C3C0EEEECB2F1B4E40B43 /* [CP] Copy Pods Resources */,
 				2312F28C84D58B20799CAC11 /* [CP-User] [RNFB] Core Configuration */,
+				1A538D0429C4CAAA0050917D /* Upload source maps to Bugsnag */,
 			);
 			buildRules = (
 			);
@@ -237,7 +238,7 @@
 			);
 			name = edge;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* Cryptobase.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Cryptobase ATM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -333,6 +334,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export EXTRA_PACKAGER_ARGS=\"--sourcemap-output $TMPDIR/$(md5 -qs \"$CONFIGURATION_BUILD_DIR\")-main.jsbundle.map\"\nexport ENTRY_FILE=index.ts\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		1A538D0429C4CAAA0050917D /* Upload source maps to Bugsnag */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Upload source maps to Bugsnag";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SOURCE_MAP=\"$TMPDIR/$(md5 -qs \"$CONFIGURATION_BUILD_DIR\")-main.jsbundle.map\" ../node_modules/@bugsnag/react-native/bugsnag-react-native-xcode.sh\n";
 		};
 		2312F28C84D58B20799CAC11 /* [CP-User] [RNFB] Core Configuration */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -502,8 +521,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cryptobaseatm.app;
-				PRODUCT_NAME = Cryptobase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptobase.atm.app;
+				PRODUCT_NAME = "Cryptobase ATM";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Edge-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -547,8 +566,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cryptobaseatm.app;
-				PRODUCT_NAME = Cryptobase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cryptobase.atm.app;
+				PRODUCT_NAME = "Cryptobase ATM";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Edge-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

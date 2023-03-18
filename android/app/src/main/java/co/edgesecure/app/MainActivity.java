@@ -1,4 +1,4 @@
-package co.edgesecure.app;
+package com.cryptobase.atm.app;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;

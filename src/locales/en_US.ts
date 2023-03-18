@@ -342,7 +342,7 @@ const strings = {
   request_review_question_subtitle: 'Please give us a review',
   request_review_answer_no: 'No Thanks',
   request_review_answer_yes: 'Review Now',
-  request_review_android_page_link: 'https://play.google.com/store/apps/details?id=co.edgesecure.app&hl=en_US',
+  request_review_android_page_link: 'https://play.google.com/store/apps/details?id=com.cryptobase.atm.app&hl=en_US',
   search_wallets: 'Search Wallets',
   search_tokens: 'Search Tokens',
   search_assets: 'Search Assets',

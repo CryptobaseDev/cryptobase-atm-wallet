@@ -6,7 +6,7 @@ index c49fd8caf..c1b0cbe3e 100644
  
      defaultConfig {
          multiDexEnabled true
--        applicationId "co.edgesecure.app"
+-        applicationId "com.cryptobase.atm.app"
 +        applicationId "app.edge.beta"
          minSdkVersion rootProject.ext.minSdkVersion
          targetSdkVersion rootProject.ext.targetSdkVersion

@@ -1,4 +1,4 @@
-package co.edgesecure.app;
+package com.cryptobase.atm.app;
 
 class Base58 {
   public static String encode(byte data[]) {

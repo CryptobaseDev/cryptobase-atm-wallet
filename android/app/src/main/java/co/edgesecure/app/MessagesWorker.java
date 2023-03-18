@@ -1,4 +1,4 @@
-package co.edgesecure.app;
+package com.cryptobase.atm.app;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
