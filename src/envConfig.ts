@@ -17,7 +17,7 @@ function asCorePluginInit<T>(cleaner: Cleaner<T>): Cleaner<T | false> {
 export const asEnvConfig = asObject({
   // API keys:
   AIRBITZ_API_KEY: asOptional(asString, ''),
-  BUGSNAG_API_KEY: asOptional(asString, ''),
+  BUGSNAG_API_KEY: asOptional(asString, '0b3d29d9f64b97a4e30e05c1d91c8827'),
   IP_API_KEY: asOptional(asString, ''),
 
   // GUI plugin options:

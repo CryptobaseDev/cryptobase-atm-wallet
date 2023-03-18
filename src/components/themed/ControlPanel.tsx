@@ -233,6 +233,14 @@ export function ControlPanel(props: DrawerContentComponentProps) {
     { pressHandler: handleShareApp, iconName: 'control-panel-share', title: s.strings.string_share + ' ' + config.appName },
     {
       pressHandler: () => {
+        navigation.navigate('https://cryptobaseatm.com/privacy-policy/', {})
+        navigation.dispatch(DrawerActions.closeDrawer())
+      },
+      iconName: 'control-panel-tos',
+      title: s.strings.swap_terms_privacy_link
+    },
+    {
+      pressHandler: () => {
         navigation.navigate('settingsOverview', {})
         navigation.dispatch(DrawerActions.closeDrawer())
       },
