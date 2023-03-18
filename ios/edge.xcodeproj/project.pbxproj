@@ -230,7 +230,6 @@
 				76D1BE144E24999F9525E452 /* [CP] Embed Pods Frameworks */,
 				5C3C3C0EEEECB2F1B4E40B43 /* [CP] Copy Pods Resources */,
 				2312F28C84D58B20799CAC11 /* [CP-User] [RNFB] Core Configuration */,
-				1A538D0429C4CAAA0050917D /* Upload source maps to Bugsnag */,
 			);
 			buildRules = (
 			);
@@ -334,24 +333,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export EXTRA_PACKAGER_ARGS=\"--sourcemap-output $TMPDIR/$(md5 -qs \"$CONFIGURATION_BUILD_DIR\")-main.jsbundle.map\"\nexport ENTRY_FILE=index.ts\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
-		};
-		1A538D0429C4CAAA0050917D /* Upload source maps to Bugsnag */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Upload source maps to Bugsnag";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "SOURCE_MAP=\"$TMPDIR/$(md5 -qs \"$CONFIGURATION_BUILD_DIR\")-main.jsbundle.map\" ../node_modules/@bugsnag/react-native/bugsnag-react-native-xcode.sh\n";
 		};
 		2312F28C84D58B20799CAC11 /* [CP-User] [RNFB] Core Configuration */ = {
 			isa = PBXShellScriptBuildPhase;

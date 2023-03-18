@@ -1,8 +1,8 @@
 {
-  "name": "edge-react-gui",
-  "version": "3.5.0",
+  "name": "cryptobase-react-gui",
+  "version": "3.5.1",
   "private": true,
-  "description": "Edge Wallet React GUI",
+  "description": "Cryptobase Wallet React GUI",
   "homepage": "https://edge.app",
   "repository": {
     "type": "git",

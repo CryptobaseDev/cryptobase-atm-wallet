@@ -10,7 +10,7 @@ export const cbatmConfig: AppConfig = {
   configName: 'cryptobase',
   darkTheme: cbatmDark,
   defaultWallets: ['BTC', 'ETH', 'LTC', 'BCH', 'DASH'],
-  knowledgeBase: 'https://support.edge.app/support/home',
+  knowledgeBase: 'https://cryptobaseatm.com',
   lightTheme: cbatmLight,
   notificationServers: ['https://notif1.edge.app'],
   phoneNumber: '+1-307-702-0115',
