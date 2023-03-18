@@ -19,6 +19,7 @@ export const cbatmConfig: AppConfig = {
   supportEmail: 'support@cryptobaseatm.com',
   supportSite: 'https://cryptobaseatm.com',
   termsOfServiceSite: 'https://cryptobaseatm.com/terms-and-conditions/',
+  privacyPolicySite: 'https://cryptobaseatm.com/privacy-policy/',
   website: 'https://cryptobaseatm.com',
   extraTab: {
     tabTitleKey: 'title_map',

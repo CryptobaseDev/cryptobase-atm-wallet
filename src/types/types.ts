@@ -306,6 +306,7 @@ export interface AppConfig {
   supportEmail: string
   supportSite: string
   termsOfServiceSite: string
+  privacyPolicySite: string
   website: string
   extraTab?: {
     webviewUrl: string

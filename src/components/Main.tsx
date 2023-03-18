@@ -97,6 +97,7 @@ import { StakeOptionsScene as StakeOptionsSceneComponent } from './scenes/Stakin
 import { StakeOverviewScene as StakeOverviewSceneComponent } from './scenes/Staking/StakeOverviewScene'
 import { SwapSettingsScene as SwapSettingsSceneComponent } from './scenes/SwapSettingsScene'
 import { TermsOfServiceComponent as TermsOfServiceComponentComponent } from './scenes/TermsOfServiceScene'
+import { PrivacyPolicyComponent as PrivacyPolicyComponentComponent } from './scenes/PrivacyPolicyScene'
 import { TransactionDetailsScene as TransactionDetailsSceneComponent } from './scenes/TransactionDetailsScene'
 import { TransactionList as TransactionListComponent } from './scenes/TransactionListScene'
 import { TransactionsExportScene as TransactionsExportSceneComponent } from './scenes/TransactionsExportScene'
@@ -179,6 +180,7 @@ const StakeOptionsScene = ifLoggedIn(StakeOptionsSceneComponent)
 const StakeOverviewScene = ifLoggedIn(StakeOverviewSceneComponent)
 const SwapSettingsScene = ifLoggedIn(SwapSettingsSceneComponent)
 const TermsOfServiceComponent = ifLoggedIn(TermsOfServiceComponentComponent)
+const PrivacyPolicyComponent = ifLoggedIn(PrivacyPolicyComponentComponent)
 const TransactionDetailsScene = ifLoggedIn(TransactionDetailsSceneComponent)
 const TransactionList = ifLoggedIn(TransactionListComponent)
 const TransactionsExportScene = ifLoggedIn(TransactionsExportSceneComponent)
@@ -694,6 +696,7 @@ const EdgeAppStack = () => {
           title: s.strings.title_terms_of_service
         }}
       />
+      <Stack.Screen name="privacyPolicy" component={PrivacyPolicyComponent} options={{ title: s.strings.swap_terms_privacy_link }} />
       <Stack.Screen
         name="transactionDetails"
         component={TransactionDetailsScene}
