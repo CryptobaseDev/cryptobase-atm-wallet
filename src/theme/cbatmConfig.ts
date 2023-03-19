@@ -6,7 +6,7 @@ export const cbatmConfig: AppConfig = {
   appId: undefined,
   appName: 'Cryptobase ATM Wallet',
   appNameShort: 'Cryptobase',
-  appStore: 'https://itunes.apple.com/app/id1344400091',
+  appStore: '',
   configName: 'cryptobase',
   darkTheme: cbatmDark,
   defaultWallets: ['BTC', 'ETH', 'LTC', 'BCH', 'DASH'],
