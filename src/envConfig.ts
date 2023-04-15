@@ -79,12 +79,12 @@ export const asEnvConfig = asObject({
   ),
   CHANGE_NOW_INIT: asCorePluginInit(
     asObject({
-      apiKey: asOptional(asString, '')
+      apiKey: asOptional(asString, '4117cf9c020adefa62b207fa8a9a7a6b54d196b6ec3f5f72e22ea1c7f496b9db')
     }).withRest
   ),
   CHANGEHERO_INIT: asCorePluginInit(
     asObject({
-      apiKey: asOptional(asString, '')
+      apiKey: asOptional(asString, 'b04e085dfa184b9aba35d989ecfdd870')
     }).withRest
   ),
   ETHEREUM_INIT: asCorePluginInit(
@@ -111,7 +111,7 @@ export const asEnvConfig = asObject({
   ),
   EXOLIX_INIT: asCorePluginInit(
     asObject({
-      apiKey: asOptional(asString, '')
+      apiKey: asOptional(asString, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndsK2NyeXB0b2Jhc2VAZWRnZS5hcHAiLCJzdWIiOjI3MjUyLCJpYXQiOjE2ODEyNTg5MzYsImV4cCI6MTgzOTA0NjkzNn0.iasMFTwvzJ8dbkDjaMKKLlHZxNgiGdn12zh4WWwm9eM')
     }).withRest
   ),
   FANTOM_INIT: asCorePluginInit(
@@ -148,7 +148,7 @@ export const asEnvConfig = asObject({
   ),
   LETSEXCHANGE_INIT: asCorePluginInit(
     asObject({
-      apiKey: asOptional(asString, '')
+      apiKey: asOptional(asString, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndsK2NyeXB0b2Jhc2VAZWRnZS5hcHAiLCJzdWIiOjI3MjUyLCJpYXQiOjE2ODEyNTg5MzYsImV4cCI6MTgzOTA0NjkzNn0.iasMFTwvzJ8dbkDjaMKKLlHZxNgiGdn12zh4WWwm9eM')
     }).withRest
   ),
   MONERO_INIT: asCorePluginInit(
@@ -179,7 +179,7 @@ export const asEnvConfig = asObject({
   ),
   SWAPUZ_INIT: asCorePluginInit(
     asObject({
-      apiKey: asOptional(asString, '')
+      apiKey: asOptional(asString, 'e9031d9e-fd4d-482a-a048-7687671f8648')
     }).withRest
   ),
   THORCHAIN_INIT: asCorePluginInit(
@@ -197,7 +197,7 @@ export const asEnvConfig = asObject({
   ),
 
   // App options:
-  APP_CONFIG: asOptional(asString, 'edge'),
+  APP_CONFIG: asOptional(asString, 'cryptobase'),
   BETA_FEATURES: asOptional(asBoolean, false),
   USE_FAKE_CORE: asOptional(asBoolean, false),
   USE_FIREBASE: asOptional(asBoolean, true),
